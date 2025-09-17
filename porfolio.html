@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Sharma | Data Analyst & ML Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+
+        .glass-effect {
+            background: rgba(17, 24, 39, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-card,
+        .project-card,
+        .exp-card,
+        .cert-card {
+            background-color: #111827;
+            border: 1px solid #374151;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover,
+        .project-card:hover,
+        .exp-card:hover,
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+        }
+
+        .accent-color {
+            color: #2dd4bf;
+        }
+
+        .accent-bg {
+            background-color: #2dd4bf;
+        }
+
+        .accent-border {
+            border-color: #2dd4bf;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .section-title span {
+            color: #2dd4bf;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <header id="header" class="glass-effect fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider">
+                Akash <span class="accent-color">Sharma</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:accent-color transition-colors duration-300">About</a>
+                <a href="#projects" class="hover:accent-color transition-colors duration-300">Projects</a>
+                <a href="#skills" class="hover:accent-color transition-colors duration-300">Skills</a>
+                <a href="#contact"
+                    class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 hover:accent-color">About</a>
+            <a href="#projects" class="block py-2 hover:accent-color">Projects</a>
+            <a href="#skills" class="block py-2 hover:accent-color">Skills</a>
+            <a href="#contact"
+                class="block mt-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg text-center">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <section id="home" class="container mx-auto px-6 py-20 md:py-32">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                        Data Analyst & <br>
+                        <span class="accent-color">ML Enthusiast</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-300 max-w-xl mx-auto md:mx-0">
+                        An AI/ML enthusiast skilled in Python, SQL, and deep learning. Experienced in building
+                        end-to-end ML pipelines with a focus on NLP, predictive modeling, and time series forecasting.
+                        Passionate about applying AI to solve real-world business problems.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="https://github.com/akashsharma234" target="_blank"
+                            class="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center space-x-2">
+                            <i data-lucide="github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="document/resume (7).pdf" download="AkashSharma_Resume.pdf"
+                            class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center space-x-2">
+                            <i data-lucide="download"></i>
+                            <span>My Resume</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div
+                        class="w-72 h-72 md:w-80 md:h-80 rounded-full bg-gray-800 border-4 border-teal-500/50 flex items-center justify-center overflow-hidden">
+                        <img src="image/WhatsApp Image 2025-04-04 at 10.57.28_51d2088f.jpg" alt="Akash Sharma"
+                            class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="max-w-4xl mx-auto text-center text-slate-300 text-lg leading-relaxed">
+                    <p>
+                        I am a motivated and detail-oriented Computer Science student from Bennett University with a
+                        CGPA of 7.8/10. My passion lies in leveraging data to drive insights and build intelligent
+                        systems. I have hands-on experience in the complete machine learning lifecycle, from data
+                        cleaning and feature engineering to model deployment.
+                    </p>
+                    <p class="mt-4">
+                        My projects showcase my ability to build predictive models for regression tasks, develop NLP
+                        solutions for fake news detection, and create interactive data visualizations using tools like
+                        Power BI. I am proficient in Python, SQL, and various ML libraries, and am always eager to learn
+                        and apply new technologies to create impactful solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">Ford Car Price Prediction</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">Developed an end-to-end predictive model for used Ford
+                            car prices, including data cleaning, preprocessing, and feature encoding. Built and
+                            evaluated Linear Regression models, achieving high accuracy.</p>
+                        <div class="mt-4">
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Python</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Pandas</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Scikit-learn</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Linear
+                                Regression</span>
+                        </div>
+                        <a href="https://github.com/akashsharma234/car_prediction_model" target="_blank"
+                            class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View on GitHub <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">Loan Status Prediction</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">Built a classification model to predict loan approvals.
+                            Engineered features like credit history and income percentile, performed EDA, and deployed
+                            the model as an interactive web application using Streamlit/Flask.</p>
+                        <div class="mt-4">
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Python</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Scikit-learn</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">SVM</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Streamlit</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Flask</span>
+                        </div>
+                        <a href="https://github.com/akashsharma234/Loan_status_prediction" target="_blank"
+                            class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View on GitHub <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">Fake News Detection</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">Implemented NLP classifiers (LSTM, BERT) to detect
+                            misinformation. Processed datasets using techniques like Word2Vec and BERT embeddings, and
+                            deployed an interactive Streamlit app for real-time headline testing.</p>
+                        <div class="mt-4">
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">NLP</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">TensorFlow</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">PyTorch</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Hugging
+                                Face</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">BERT</span>
+                        </div>
+                        <a href="https://github.com/akashsharma234/False-Information-Detection" target="_blank"
+                            class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View on GitHub <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">Personal Finance Dashboard</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">Developed an interactive Power BI dashboard to analyze
+                            personal finances. Applied SQL for data cleaning and transformation, and designed custom DAX
+                            measures and KPIs to convert raw data into actionable insights.</p>
+                        <div class="mt-4">
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Power
+                                BI</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">SQL</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Excel</span>
+                            <span
+                                class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">DAX</span>
+                        </div>
+                        <a href="https://github.com/akashsharma234" target="_blank"
+                            class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View on GitHub <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Technical <span>Skills</span></h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <div class="skill-card rounded-lg p-4 text-center font-bold accent-bg text-gray-900">Python</div>
+                    <div class="skill-card rounded-lg p-4 text-center font-bold accent-bg text-gray-900">SQL</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Java</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Pandas</div>
+                    <div class="skill-card rounded-lg p-4 text-center">NumPy</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Scikit-learn</div>
+                    <div class="skill-card rounded-lg p-4 text-center">TensorFlow</div>
+                    <div class="skill-card rounded-lg p-4 text-center">PyTorch</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Hugging Face</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Power BI</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Seaborn</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Matplotlib</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Kafka</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Streamlit</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Flask</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Git & GitHub</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="max-w-2xl mx-auto text-slate-300 mb-8">
+                    I'm actively looking for opportunities in Data Analysis and Machine Learning where I can apply my
+                    skills to solve challenging problems. I'd love to hear about new opportunities. Let's connect!
+                </p>
+                <a href="mailto:akashkauts3052@gmail.com"
+                    class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold text-lg py-4 px-8 rounded-lg transition-colors duration-300">
+                    akashkauts3052@gmail.com
+                </a>
+                <div class="mt-12 flex justify-center space-x-6">
+                    <a href="https://www.linkedin.com/in/akash-sharma-13520a255/" target="_blank"
+                        class="text-slate-400 hover:accent-color"><i data-lucide="linkedin" class="w-8 h-8"></i></a>
+                    <a href="https://github.com/akashsharma234" target="_blank"
+                        class="text-slate-400 hover:accent-color"><i data-lucide="github" class="w-8 h-8"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-400">
+            <p>&copy; 2024 Akash Sharma. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const href = this.getAttribute('href');
+
+                // Handle the case for the top link
+                if (href === '#') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+
+                const targetElement = document.querySelector(href);
+
+                if (targetElement) {
+                    // We need to account for the fixed header height
+                    const headerOffset = document.getElementById('header').offsetHeight;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
